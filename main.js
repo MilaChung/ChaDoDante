@@ -31,10 +31,10 @@ function adicionarNome()  {
       contatoConvidado: contato
     });
 
-    document.getElementById("textoNome").innerHTML = "Gostaria de adicionar um(a) acompanhante?";
-    document.getElementById("nome").style.display = "none";
-    document.getElementById("sobrenome").style.display = "none";
-    document.getElementById("contato").style.display = "none";
+    document.getElementById("texto1").innerHTML = "Gostaria de adicionar um(a) acompanhante?";
+    document.getElementById("texto1").style.fontSize = "25px";
+    document.getElementById("texto1").style.fontFamily = "Great Vibes";
+    document.getElementById("caixaSecundaria").style.display = "none";
     document.getElementById("login").style.display = "none";
 
     let botaoSim = "<button id='sim' class='btn fs-4 mx-2 my-2' onclick='sim()'> Sim </button>";
@@ -59,14 +59,16 @@ function nao(){
   document.getElementById("aviso").style.textShadow = "2px 2px rgb(173, 240, 173)";
   document.getElementById("aviso").style.marginBottom = "40px";
 
-  document.getElementById("textoNome").style.display = "none";
+  document.getElementById("texto1").style.display = "none";
   document.getElementById("listaPresenca").style.display = "none";
 }
 
 function sim(){
-  document.getElementById("textoNome").innerHTML = "Nome completo do(a) acompanhante:";
+  document.getElementById("texto1").innerHTML = "Nome completo do(a) acompanhante:";
+  document.getElementById("texto1").style.fontSize = "25px";
+  document.getElementById("texto1").style.fontFamily = "Great Vibes";
 
-  let entrada = "<input type='text' id='acompanhante' class='form-control col-xs-6' placeholder='Escreva aqui o nome completo'>";
+  let entrada = "<input type='text' id='acompanhante' class='form-control w-75' placeholder='Escreva aqui o nome completo'>";
   let botao = "<br><button id='confirmaAcompanhante' class='btn fs-4' onclick='confirmar()'> Confirmar acompanhante </button>"
   let caixa = entrada + botao;
   document.getElementById("aviso").innerHTML = caixa;
