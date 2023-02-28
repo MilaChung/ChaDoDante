@@ -66,7 +66,7 @@ function nao(){
 function sim(){
   document.getElementById("textoNome").innerHTML = "Nome completo do(a) acompanhante:";
 
-  let entrada = "<input type='text' id='acompanhante' class='form-control w-50' placeholder='Escreva aqui o nome completo'>";
+  let entrada = "<input type='text' id='acompanhante' class='form-control w-75' placeholder='Escreva aqui o nome completo'>";
   let botao = "<br><button id='confirmaAcompanhante' class='btn fs-4' onclick='confirmar()'> Confirmar acompanhante </button>"
   let caixa = entrada + botao;
   document.getElementById("aviso").innerHTML = caixa;
