@@ -26,6 +26,10 @@ body{
     border: 2px solid rgb(113, 241, 113);
 }
 
+#listaPresenca{
+    font-size: 50px;
+}
+
 #login, #sim, #nao, #confirmaAcompanhante{
     background-color: rgb(128, 245, 128);
     color: rgb(5, 78, 5);
