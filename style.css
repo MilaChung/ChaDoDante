@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(224, 250, 224);
+}
+
+#caixaPrincipal{
+    background-image: url("img/folhas12.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 5px groove rgb(152, 250, 152)
+}
+
+#caixaPrincipal h3, #texto{
+    color: rgb(6, 66, 6);
+    text-shadow: 2px 2px rgb(173, 240, 173);
+    /* font-family: 'Pacifico', cursive; */
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Great Vibes', cursive;
+}
+
+#caixaPrincipal label{
+    font-family: 'Great Vibes', cursive;
+}
+
+#caixaPrincipal input, #acompanhante{
+    border: 2px solid rgb(113, 241, 113);
+}
+
+#login, #sim, #nao, #confirmaAcompanhante{
+    background-color: rgb(128, 245, 128);
+    color: rgb(5, 78, 5);
+    font-family: 'Great Vibes', cursive;
+    box-shadow: 2px 2px rgb(5, 88, 5);
+}
+
+#login:hover, #nao:hover, #sim:hover, #confirmaAcompanhante:hover{
+    color: white;
+    box-shadow: 2px 2px rgb(229, 255, 229);
+}
