@@ -76,10 +76,11 @@ function confirmar(){
   let acompanhante = document.getElementById("acompanhante").value;
 
   if (acompanhante == "") {
-    document.getElementById("aviso").innerHTML = "Preencha o campo com o nome completo por favor";
-    document.getElementById("aviso").style.color = "green";
-    document.getElementById("aviso").style.fontSize = "20px";
-    document.getElementById("aviso").style.fontWeight = "bold";
+    document.getElementById("texto1").innerHTML = "Preencha o campo com o nome completo por favor";
+    document.getElementById("texto1").style.color = "green";
+    document.getElementById("texto1").style.fontSize = "20px";
+    document.getElementById("texto1").style.fontWeight = "bold";
+    document.getElementById("texto1").style.fontFamily = "Arial";
   }else {
   
     firebase.database().ref("/").child(nomeCompleto).update({
@@ -88,6 +89,7 @@ function confirmar(){
 
     document.getElementById("textoNome").style.display = "none";
     document.getElementById("listaPresenca").style.display = "none";
+    document.getElementById("texto1").style.display = "none";
     document.getElementById("texto").innerHTML = nomeCompleto;
     document.getElementById("texto").style.fontSize = "50px";
     document.getElementById("aviso").innerHTML = "Obrigada por confirmar a sua presença!";
