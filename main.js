@@ -9,7 +9,11 @@ const firebaseConfig = {
   };
   
     // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
+
+function  lista(){
+  window.location = "index2.html";
+}
 
 let nomeCompleto;
   
@@ -32,13 +36,13 @@ function adicionarNome()  {
     });
 
     document.getElementById("texto1").innerHTML = "Gostaria de adicionar um(a) acompanhante?";
-    document.getElementById("texto1").style.fontSize = "25px";
+    document.getElementById("texto1").style.fontSize = "35px";
     document.getElementById("texto1").style.fontFamily = "Great Vibes";
     document.getElementById("caixaSecundaria").style.display = "none";
     document.getElementById("login").style.display = "none";
 
-    let botaoSim = "<button id='sim' class='btn fs-4 mx-2 my-2' onclick='sim()'> Sim </button>";
-    let botaoNao = "<button id='nao' class='btn fs-4' onclick='nao()'> Não </button>";
+    let botaoSim = "<button id='sim' class='btn fs-3 mx-2 my-2' onclick='sim()'> Sim </button>";
+    let botaoNao = "<button id='nao' class='btn fs-3' onclick='nao()'> Não </button>";
     let opcao = botaoSim + botaoNao;
 
     document.getElementById("aviso").innerHTML = opcao;
@@ -65,11 +69,11 @@ function nao(){
 
 function sim(){
   document.getElementById("texto1").innerHTML = "Nome completo do(a) acompanhante:";
-  document.getElementById("texto1").style.fontSize = "25px";
+  document.getElementById("texto1").style.fontSize = "35px";
   document.getElementById("texto1").style.fontFamily = "Great Vibes";
 
   let entrada = "<input type='text' id='acompanhante' class='form-control w-75' placeholder='Escreva aqui o nome completo'>";
-  let botao = "<br><button id='confirmaAcompanhante' class='btn fs-4' onclick='confirmar()'> Confirmar acompanhante </button>"
+  let botao = "<br><button id='confirmaAcompanhante' class='btn fs-3' onclick='confirmar()'> Confirmar acompanhante </button>"
   let caixa = entrada + botao;
   document.getElementById("aviso").innerHTML = caixa;
 }

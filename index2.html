@@ -18,23 +18,30 @@
         <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
         <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
 
-        <script src="https://kit.fontawesome.com/6bfd988c39.js" crossorigin="anonymous"></script>
-
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
 
     <center>
-        <div id="convite" class="col-lg-5 col-md-5 col-sm-6 col-xs-10 mt-3 mb-3 mx-2">
-            <img src="img/ConviteDante.jpg" class="img-fluid w-100" id="logo">
-        </div>
-        <div id="lembrete" class="col-lg-6 col-md-5 col-sm-6 col-xs-10 mt-3 mb-3">
-            <h3 id="bebida" class="fs-1">Para comemorar esse dia tão especial, pedimos sua contribuição, traga uma bebida e venha se divertir conosco!</h3>
-            <button id="botaoConvite" class="btn fs-2" onclick="lista()">Clique aqui para confirmar a sua presença!</button>
-            <div class="mt-2">
-                <a href="https://www.instagram.com/principechungjuarez/" target="_blank" class="fs-1 mx-2"> <i class="fa-brands fa-instagram"></i> </a>
-                <a href="https://web.whatsapp.com/send?phone=5521987379731" target="_blank" class="fs-1"> <i class="fa-brands fa-whatsapp"></i> </a>
+        <div id ="caixaPrincipal" class="col-lg-5 col-md-5 col-sm-6 col-xs-11 mt-3 mb-3 mx-2">
+
+        <img src="img/lembrancinhaSemFundo.png" class="img-fluid w-50 mb-3" id="logo">
+            <h3 id="listaPresenca">Lista de Presença</h3>
+            <div id="caixaSecundaria" class="col-lg-6 col-md-5 col-sm-6 col-xs-11">
+                <label id="textoNome" class="fs-2">Entre com o seu nome, sobrenome e telefone por favor</label>
+                <br>
+                <input type="text" id="nome" class="form-control" placeholder="Escreva aqui o seu nome" required>
+                <br>
+                <input type="text" id="sobrenome" class="form-control" placeholder="Escreva aqui o seu sobrenome" required>
+                <br>
+                <input type="tel" id="contato" class="form-control" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Escreva aqui o seu telefone" required>
             </div>
+            <br>
+            <button id="login" class="btn fs-3" onclick="adicionarNome()">Entrar</button>
+            <div id="texto" class="text-capitalize"></div>
+            <div id="texto1"></div>
+            <div id="aviso"></div>
+            <br><br>
         </div>
     </center>
     <script src="main.js"></script>

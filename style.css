@@ -1,5 +1,12 @@
 body{
     background-color: rgb(224, 250, 224);
+    background-image: linear-gradient(rgb(176, 238, 141), rgb(220, 250, 216));
+    background-repeat: no-repeat;
+}
+
+#convite{
+    border: 10px groove rgb(152, 250, 152);
+    box-shadow: 10px 10px rgba(70, 163, 70, 0.384);;
 }
 
 #caixaPrincipal{
@@ -7,10 +14,10 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border: 5px groove rgb(152, 250, 152)
+    border: 10px groove rgb(152, 250, 152);
 }
 
-#caixaPrincipal h3, #texto{
+#caixaPrincipal h3, #texto, #bebida{
     color: rgb(6, 66, 6);
     text-shadow: 2px 2px rgb(173, 240, 173);
     /* font-family: 'Pacifico', cursive; */
@@ -30,14 +37,36 @@ body{
     font-size: 50px;
 }
 
-#login, #sim, #nao, #confirmaAcompanhante{
+#login, #sim, #nao, #confirmaAcompanhante, #botaoConvite{
     background-color: rgb(128, 245, 128);
     color: rgb(5, 78, 5);
     font-family: 'Great Vibes', cursive;
     box-shadow: 2px 2px rgb(5, 88, 5);
 }
 
-#login:hover, #nao:hover, #sim:hover, #confirmaAcompanhante:hover{
+#login:hover, #nao:hover, #sim:hover, #confirmaAcompanhante:hover, #botaoConvite:hover{
     color: white;
     box-shadow: 2px 2px rgb(229, 255, 229);
+}
+
+#botaoConvite{
+    background-color: rgb(5, 78, 5);
+    color: rgb(163, 248, 163);
+    font-family: 'Great Vibes', cursive;
+    box-shadow: 2px 2px rgb(5, 88, 5);
+}
+
+#botaoConvite:hover{
+    color: white;
+    box-shadow: 4px 4px rgb(229, 255, 229);
+}
+
+#lembrete a{
+    text-decoration: none;
+    color: rgb(13, 83, 13);
+}
+
+#lembrete i:hover{
+    text-decoration: none;
+    color: rgb(126, 250, 126);
 }
