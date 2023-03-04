@@ -12,7 +12,7 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 function  lista(){
-  window.location = "index2.html";
+  window.location = "ListaDePresenca.html";
 }
 
 let nomeCompleto;
